@@ -1,0 +1,89 @@
+.b1 .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+} 
+
+.b1 .mask {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.t_w_input {
+  position: fixed;
+  top: 70%;
+  width: 80%;
+  height: 370rpx;
+  left: 10%;
+  margin-top: -450rpx;
+  background: #fff;
+  z-index: 999;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.b2{
+  width: 600rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100rpx 0 0 -300rpx; 
+}
+
+.close{
+  position:absolute;
+  width:45rpx;
+  height:45rpx;
+  right:27rpx;
+  top:-63rpx;
+}
+.close_img{
+  width: 100%;
+  height: 100%;
+}
+
+.ensure {
+  background: #1aad19;
+  color: #fff;
+  width: 30%;
+  height: 70rpx;
+  font-size: 26rpx;
+  margin-top: 140rpx;
+}
+
+.index-like{
+  display:flex;
+  flex-direction: column;
+  margin-top: -10rpx;
+}
+
+.receive{
+  width: 100%;
+  height: 100rpx;
+  box-shadow: 1px 1px 1px  violet;
+  text-align: center;
+  line-height: 100rpx;
+}
+.receive icon{
+  width:74rpx;
+  height:81rpx;
+}
+.receive text{
+  font-size:37rpx;
+  color:#F00054;
+  padding-left:20rpx
+}
+
+.share{
+  display:flex;
+  flex-direction:row;
+  margin-top:64rpx;
+}
+
+.share-btn1, .share-btn2{
+  width: 40%;
+  height:94rpx;
+} 

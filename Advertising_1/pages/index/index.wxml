@@ -1,0 +1,42 @@
+<import src="/pages/index/shop/shop-template.wxml" />
+
+<view class="page">
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image bindtap="tapBanner" data-id="{{index}}" src="{{item.img}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="recommend">
+    <image src="/imgs/icons/recom.jpg"></image>
+  </view>
+
+  <view class='seller_container'>
+    <block wx:key="*this" wx:for="{{shops_key}}" wx:for-item="item">
+      <view class="seller_display">
+        <template is="shopTemplate" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+
+</view>
+
+<view class="b1" hidden="{{flag_wechat}}">
+  <view class="mask" bindtap="hidden"></view>
+  <view class="t_w_input">
+    <view class="b2">
+      <view class="close">
+        <image class='close_img' src="../../imgs/icons/close.png" bindtap='ensure'></image>
+      </view>
+      <view class="index-like">
+        <image class='index-vip-img' src="../../imgs/icons/wx.png"></image>
+        <text class='postalCode'>{{wechatNumber}}</text>
+        <view class='index-btn' bindtap="addwechat">
+          <text class='index-btn-font'>添加微信</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

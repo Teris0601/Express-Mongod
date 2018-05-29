@@ -1,0 +1,17 @@
+<template name="signaturetemplate">
+  <view class="list">
+    <view class="goods-wrap" wx:if="{{!isLoading}}" wx:key="*this"  bindtap="tapGood" data-gid="{{id}}">
+    <image class="goods-img" src="{{imgUrl}}"></image>
+    <view class="text">
+      <view class="title">
+        <text>{{styleName}}</text>
+      </view>
+      <view class="price">
+        <text class="new">￥{{price}}</text>
+        <text class="old">￥{{oldPrice}}</text>
+        <text class="number">{{peoplebuy}}人付款</text>
+      </view>
+    </view>
+  </view>
+  </view>
+</template>

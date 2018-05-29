@@ -1,0 +1,48 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/signature/signature",
+    "pages/signatureshow/signatureshow",
+    "pages/mine/mine", 
+    "pages/coupon/coupon",
+    "pages/about/about",
+    "pages/details/details",
+    "pages/order/confirm/confirm",
+    "pages/order/order",
+    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1F76E8",
+    "navigationBarTitleText": "签名",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#ff4343",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "签名设计",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-active.png"
+      },
+      {
+        "pagePath": "pages/signature/signature",
+        "text": "签名秀",
+        "iconPath": "images/type.png",
+        "selectedIconPath": "images/type-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine-active.png"
+      }
+    ]
+  }
+}

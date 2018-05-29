@@ -1,0 +1,272 @@
+/* pages/details/details.wxss */
+
+@import "../../wxParse/wxParse.wxss";
+
+.container{
+	padding-bottom: 50rpx;
+}
+.video{
+  width: 750rpx;
+	height: 400rpx;
+}
+.video-image{
+	width: 100%;
+	height: 100%;
+}
+
+.title{
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.descript{
+  text-indent:64rpx;
+  padding:0 15px;
+  color:#C9B0FF;
+  font-size:14px;
+  line-height:1.89;
+}
+
+.now{
+	display: inline-block;
+	color: #f44;
+	font-size: 20px;
+	font-weight: 24px;
+	line-height: 24px;
+	margin-right: 5px;
+}
+
+.old{
+	position: relative;
+	top: -1px;
+	display: inline-block;
+  text-decoration:line-through;
+	color: #666;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.select-wrap view{
+	font-size: 14px;
+}
+
+.select{
+	color: #999;
+	margin-right:10px;
+}
+
+.detailtitle{
+	font-size: 15px;
+	padding: 0px 15px 10px 15px;
+}
+
+.icon{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	content: "";
+	display: inline-block;
+	height: 6px;
+	width: 6px;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+.bot-bar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1rpx solid #fff;
+}
+
+.left-go {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.bot-bar-btn {
+  float: right;
+  width: 75%;
+  height: 100%;
+}
+
+.bot-bar-btn .left,.bot-bar-btn .right {
+  float: right;
+  width: 50%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.bot-bar-btn .left {
+  background-color: #fd9c1e;
+}
+
+.bot-bar-btn .right {
+  background-color: #f44;
+}
+
+.left-go > view {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left-go > view text {
+  position: absolute;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  color: #333;
+  text-align: center;
+}
+
+.left-go .zan-icon {
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.my-badge {
+  top: 2px;
+  right: 2px;
+}
+
+
+/*弹出框*/
+.container-wrap{
+  position: relative;
+}
+.dlog_btn{
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+}
+.cartbtn{
+  color:#fff;
+  background-color: #fd9c1e;
+}
+
+.zan-icon-close{
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 5px 5px;
+  padding: 5px 5px;
+}
+.dlog_box{
+  width: 90%;
+  padding: 10px 0;
+  margin:0 auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+.dlog_img{
+  float:left;
+  width: 150rpx;
+  height:150rpx;
+  margin-right: 10px;
+}
+.dlog_price{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f44;
+}
+ .dlog_selected > text{
+  color: #999;
+  line-height: 22px;
+}
+
+.dlog_count {
+  color: #999;
+  line-height: 22px;
+}
+
+.dlog_title{
+  width: 100%;
+  margin: 6px 0;
+  margin-top: 8px;
+  color: #999;
+}
+
+.casualty{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.zan-label{
+  height: auto;
+}
+.zan-quantity--small{
+  float: right;
+  margin-top: -20px;
+}
+
+.remarks{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+  width: 750rpx;
+  height: 200rpx;
+}
+
+.peisong-way{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+}
+.peisong-way .row-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 24rpx 0 24rpx 30rpx;
+    border-bottom: 1rpx solid #f9f9f9;
+}
+.peisong-way .row-label{
+    font-size: 28rpx;
+    color: #333;
+}
+.peisong-way .right-text{
+    font-size: 28rpx;
+    color: #666;
+    padding-right: 30rpx;
+}
+.peisong-way .liuyan{
+    width: 510rpx;
+    font-size: 28rpx;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

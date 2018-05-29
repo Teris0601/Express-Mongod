@@ -1,0 +1,74 @@
+
+ 微云盘
+id: 2678697201  
+pd: mzone9you
+
+咫尺网络
+id: 15549638984
+pd: 15549638984
+
+腾讯云
+id: 710024018@qq.com
+pd: xiao1991
+
+芝麻客服
+id: 13044814214
+pd: 13044814214
+
+
+千图网
+id: 13044814214
+pd: 
+
+教程网站：http://www.wxapp-union.com/thread-21555-1-1.html
+
+
+http://api.map.baidu.com/api?v=2.0&ak=iktKVs9QstyPBrpllHrGeKofOuM2mytz&location=114.316756,30.59797&output-json
+http://www.pcwap.cn/index.php?s=/Weixin/index 
+
+
+
+/*
+https://787796316.mylightsite.com/upload/install/
+*/
+
+
+v6.11.2
+http://wthrcdn.etouch.cn/weather_mini?city=武汉	
+
+http://localhost:4000/releaseGoods
+
+货源供求
+kni9573@163.com----48
+pd: mzone9you
+AppID(小程序ID)	:  	wx68a0f67466eaa4ee
+AppSecret(小程序密钥)  :   3d0a5a6206385c9a604839c6125b9193
+腾讯云服务器:710024018
+密码:mzone9you
+数据库资源的密码为LEIOpOyp87975
+
+
+https://ke.qq.com/webcourse/index.html#course_id=186871&term_id=100221347&taid=1753145520871927&vid=y1422q8lxub
+
+
+
+request: 89645201.guangzhouzhuangxiu01.cn 
+socket: 89645201.ws.qcloud.la
+
+URL(服务器地址): http://www.pcwap.cn/index.php?s=/Weixin/index
+Token(令牌): pcwap
+消息加密方式: 安全模式
+数据格式: JSON
+
+
+Token(令牌): ybcmyxgs159753
+
+客服跳转测试
+和田玉鋻别    qpbpn51@163.com  wx541443fffd757961 puk10000  
+藏品鉴定      smznr67@163.com   puk10000
+
+
+
+地理位置小程序测试
+id: fangxumap
+key: GVVBZ-DHHHP-67VDQ-VZN2Y-HOTGO-4SBS3 

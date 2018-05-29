@@ -1,0 +1,44 @@
+<import src="../../../dist/quantity/index.wxml" />
+<import src="/dist/toast/index.wxml" />
+<import src="/dist/loadmore/index.wxml" />
+
+
+
+<view wx:if="{{!empty}}">
+  <view class="container hasgoods">
+    <view class="weui-cell" style="background-color:#fff;padding-left:5px;">
+      <view class="weui-cell__hd" style="width:100%;">
+        <view class="zan-ellipsis top-title" bindtap="goIndex">您的订单</view>
+      </view>
+    </view>
+
+    <template is="zan-loadmore" data="{{loading: isLoading}}" />
+
+    <view wx:if="{{!isLoading}}" class="weui-cells weui-cells_after-title">
+      <checkbox-group bindchange="checkboxChange">
+        <view class="good-item weui-cell" wx:for="{{checkboxItems}}" wx:key="value">
+          <label>
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox">
+              <icon class="weui-icon-checkbox_circle" type="circle" size="28" hidden="{{item.checked}}"></icon>
+              <icon class="my-check iconfont icon-check" hidden="{{!item.checked}}"></icon>
+            </view>
+          </label>
+          <view class="good-info weui-cell__bd">
+            <image class="good-img" src="{{checkboxItems[index].pic}}"></image>
+            <view class="good-bot">
+              <view class="zan-ellipsis" style="max-width:450rpx;font-size:14px;">{{checkboxItems[index].name}}</view>
+              <view class="price">￥{{checkboxItems[index].price}}</view>
+              <view class="username">姓名： {{checkboxItems[index].userName}}</view>
+              <view class="useriphone">手机号： {{checkboxItems[index].userIphone}}</view>
+            </view>
+          </view>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+
+  
+</view>
+
+<template is="zan-toast" data="{{ zanToast }}"></template>

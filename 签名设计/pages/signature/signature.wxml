@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+<import src="./show-template/show-template.wxml" />
+<view class="page">
+  
+  <view class="header"  wx:if="{{containerShow}}">
+    <image src="{{artDevise}}" />
+  </view>
+
+   <scroll-view class="grid-contaier" 
+  scroll-y="true" scroll-x="false" bindscrolltolower="onScrollLower" bindscroll="scroll">
+    <view class="exhibit" wx:if="{{!isLoading}}"  wx:if="{{containerShow}}">
+      <block wx:key="*this" wx:for="{{signatures}}" wx:for-item="signature">
+        <template is="showtemplate" data="{{...signature}}" />
+      </block>
+    </view>
+  </scroll-view>
+
+  <scroll-view class="search-panel" 
+  scroll-y="true" scroll-x="false" bindscrolltolower="onScrollLower" bindscroll="scroll">
+    <view class="exhibit" wx:if="{{!isLoading}}"  wx:if="{{searchPanelShow}}">
+      <block wx:key="*this" wx:for="{{signatures}}" wx:for-item="signature">
+        <template is="showtemplate" data="{{...signature}}" />
+      </block>
+    </view>
+  </scroll-view>
+  
+</view>
+

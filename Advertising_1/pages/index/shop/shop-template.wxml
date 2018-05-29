@@ -1,0 +1,12 @@
+<template name="shopTemplate">
+  <view  class="shop_container" catchtap="onShowTap" data-id="{{postId}}">
+    <view class="show_imgSrc">
+      <view class="left">
+        <image class="left_img" src="{{seller_imgSrc[0]}}"></image>
+      </view>
+    </view>
+    <view class="descript">
+      <text class="classify">{{classify}}</text>
+    </view>
+  </view>
+</template>

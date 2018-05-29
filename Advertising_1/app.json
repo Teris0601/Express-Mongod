@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/show/show",
+    "pages/booked/booked",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#4D1345",
+    "navigationBarTitleText": "古玩收藏",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#878787",
+    "selectedColor": "#A91716",
+    "borderStyle": "#311112",
+    "backgroundColor": "#413F3F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/tabBar/home_2.png",
+        "selectedIconPath": "imgs/tabBar/home_1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "iconPath": "imgs/tabBar/store_2.png",
+        "selectedIconPath": "imgs/tabBar/store_1.png",
+        "text": "藏品"
+      },
+      {
+        "pagePath": "pages/booked/booked",
+        "iconPath": "imgs/tabBar/order_2.png",
+        "selectedIconPath": "imgs/tabBar/order_1.png",
+        "text": "合作"
+      }
+    ]
+  }
+}

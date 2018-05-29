@@ -1,0 +1,8 @@
+<view class="detail">
+  <view class="detail-header">
+    <text class="detail-title">{{title}}</text>
+  </view>
+  <view class="detail-body">
+    {{aboutUs}}
+  </view>
+</view>

@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<import src="./signature-template/signature-template.wxml" />
+
+<view class="page">
+
+  <view class="header">
+
+    <view class="bgImg">
+      <image src="{{bgImg}}"  />
+    </view>
+
+    <view class="showcoupon" >
+       <view class="coupon">    
+          <image wx:if="{{collected}}" src="{{coupon}}" bindtap="receive" />  
+          <image wx:else catchtap="receive" src="{{coupon_anti}}" />
+       </view>
+    </view>
+  </view>
+
+  <view class="exhibit" wx:if="{{!isLoading}}">
+    <block wx:key="*this" wx:for="{{goodData.data}}" wx:for-item="item">
+      <template is="signaturetemplate" data="{{...item}}" />
+    </block>
+  </view>
+
+  <view class="devise">
+    <image src="{{devise}}" />
+  </view>
+
+  <view hidden="{{true}}">
+    <contact-button type="detault-dark" size="20" session-from="weapp" class="img-plus-style zindex100 yc"></contact-button>
+    <image src="{{kefu}}" class="img-plus-style1"></image>
+  </view>
+
+</view>
+
+
+<view class="b1" hidden="{{flag_wechat}}">
+  <view class="mask" bindtap="hidden"></view>
+  <view class="t_w_input">
+    <view class="b2">
+      <view class="close">
+        <image class='close_img' src="{{close}}" bindtap='ensure'></image>
+      </view>
+      
+
+
+      <view class="index-like">
+      
+        <view class="receive"  wx:if="{{collected}}" >
+          <icon type="info" size="30" color="red"/>
+          <text>取消领取</text>
+        </view>
+        <view class="receive" wx:else>
+          <icon type="success_no_circle" size="30" color="red"/>
+          <text>领取成功</text>
+        </view>
+
+        <view class="share">
+          <button type="warn" class="share-btn1" open-type="share" id="1">分享朋友圈</button>
+        <button type="primary" class="share-btn2" open-type="share" id="2">分享好友</button>
+        </view>
+        
+      </view>
+
+    </view>
+  </view>
+</view>

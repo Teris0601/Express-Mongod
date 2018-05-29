@@ -1,0 +1,16 @@
+<template name="showtemplate">
+  <view class="list">
+    <view class="goods-wrap" wx:if="{{!isLoading}}" wx:key="*this"  bindtap="tapGood" data-gid="{{gid}}">
+      <image class="goods-img" src="{{pic}}"></image>
+      <view class="text">
+        <view class="title">
+          <text>ID:{{id}}</text>
+        </view>
+        <view class="price">
+          <text class="new">{{name}} </text>
+          <text class="number">{{class}}</text> 
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

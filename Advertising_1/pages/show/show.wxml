@@ -1,0 +1,67 @@
+<view class="page">
+
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image data-id="{{index}}" src="{{item.img}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="section icons">
+    <view class="recommending">
+      <image src="/imgs/icons/recom.jpg"></image>
+    </view>
+
+    <swiper-item>
+      <view bindtap="tapBanner" class="icon" wx:for="{{shops_key}}" wx:key="*this" data-id="{{item.postId}}">
+        <image src="{{item.seller_avatar}}"></image>
+        <text>{{item.seller_name}}</text>
+      </view>
+    </swiper-item>
+  </view>
+
+  <swiper class="swiper_container" autoplay="true" circular="true" interval="3000">
+    <block wx:for="{{msgList}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-touxiang">
+          <image src="/imgs/icons/4.jpg" />
+        </view>
+        <view class="swiper_item">{{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="touch" >
+    <button size="30" open-type="contact" session-from="contact" send-message-title="试玩1" send-message-path="http://ch1476.wx.11h5.com/?chid=1476&gameid=147" class="guest-button">
+    </button>
+    <button size="30" open-type="contact" session-from="contact" send-message-title="试玩2" send-message-path="http://ch1476.wx.11h5.com/?chid=1476&gameid=62" class="guest-button">
+    </button>
+    <button size="30" open-type="contact" session-from="contact" send-message-title="试玩3" send-message-path="http://ch1476.wx.11h5.com/?chid=1476&gameid=123" class="guest-button">
+    </button>
+    <button size="30" open-type="contact" session-from="contact" send-message-title="试玩4" send-message-path="http://ch1476.wx.11h5.com/?chid=1476&gameid=157" class="guest-button">
+    </button>
+    <button size="30" open-type="contact" session-from="contact" send-message-title="试玩5" send-message-path="http://ch1476.wx.11h5.com/?chid=1476&gameid=307" class="guest-button">
+    </button>
+  </view>
+</view>
+
+<view class="b1" hidden="{{flag_wechat}}">
+  <view class="mask" bindtap="hidden"></view>
+  <view class="t_w_input">
+    <view class="b2">
+      <view class="close">
+        <image class='close_img' src="../../imgs/icons/close.png" bindtap='ensure'></image>
+      </view>
+      
+      <view class="index-like">
+        <image class='index-vip-img' src="../../imgs/icons/wx.png"></image>
+        <text class='postalCode'>{{wechatNumber}}</text>
+        <view class='index-btn' bindtap="addwechat">
+          <text class='index-btn-font'>添加微信</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

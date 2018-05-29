@@ -1,0 +1,158 @@
+page{
+  height: 100%;
+  background-color: #DEF1FF;
+}
+.banner{
+  height: 330rpx;
+}
+.banner image{
+  width: 100%;
+  height: 100%;
+}
+
+.icons{
+  position: relative;
+  height: 397rpx;
+  padding: 84rpx 10rpx 0 10rpx;
+  margin-top: 10rpx;
+  padding-bottom: 0;
+}
+
+
+
+.icons swiper-item{
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.icons .icon{
+  float: left;
+  display: -webkit-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+  text-align: center;
+  margin: 10rpx 0;
+}
+.icons .icon image{
+  margin: 0 auto;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+}
+.icons .icon text{
+  color:#2B3F75;
+  font-size: 27rpx;
+  line-height: 2;
+}
+
+/*轮播图  */
+.swiper-img{
+  width:100%;
+  height: 150px;
+  margin-top: 5rpx;
+  margin-bottom: 20rpx;
+}
+
+swiper-item image {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/*轮播文字  */
+.swiper_container {
+ height: 80rpx;
+ width: 750rpx;
+ padding-left: 20rpx;
+ background-color: #54CBA1;
+ box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.swiper-touxiang{
+  margin-top: 17rpx;
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+}
+.swiper-touxiang image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.swiper_item {
+ margin-left: 20rpx;
+ float: left;
+ width: 500rpx;
+ color: #FAFBFC;
+ font-size: 25rpx;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ line-height: 80rpx;
+ white-space: nowrap;
+ letter-spacing: 2px;
+ text-shadow:1px 1px 2px #73C700;
+}
+
+.swiper_item:hover{
+  text-overflow:inherit;
+  overflow:visible;
+} 
+
+.show{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20rpx;
+  background-color: #203F6B;
+}
+.show .show_text{
+  width: 750rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin-bottom: 10rpx;
+  color: #FF741B;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.show .show_pic{
+  width: 750rpx;
+  height: 300rpx; 
+}
+.show .show_pic image{
+  width: 100%;
+  height: 100%;
+}
+
+.touch{
+  width: 755rpx;
+  height: 150rpx;
+  background-size: 750rpx 150rpx;
+  overflow: hidden;
+  margin-top:10rpx 
+}
+
+.touch .guest-button {
+  display: block;
+  
+  float: left;
+  text-align: center;
+  width: 70rpx;
+  height: 70rpx;
+  border: 1rpx solid #3385ff;
+}
+
+.contact{
+  margin-top:20rpx;
+  width: 750rpx;
+  height: 120rpx;
+}
+/* .contact image{
+  width: 750rpx;
+  height: 150rpx;
+} */
+
+

@@ -1,0 +1,5 @@
+/**app.wxss**/
+@import 'common/weui.wxss';
+@import "common/index.wxss";
+@import "dist/index.wxss";
+@import "dist/flip/index.wxss";

@@ -1,0 +1,13 @@
+/* pages/application/application.wxss */
+
+.app{
+  fonz-size:40rpx;
+  display: flex;
+  flex-direction: column;
+  padding:30rpx;
+}
+
+.app-2{
+   
+    
+}

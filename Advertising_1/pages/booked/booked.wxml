@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="page">
+
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <block wx:for="{{banners}}" wx:key="id">
+      <swiper-item>
+        <image data-id="{{index}}" src="{{item.img}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="show_pic">
+    <image src="{{show_pic}}"></image>
+  </view>
+
+  <view class="wtphone">
+    <view class="index-like">
+      <image class='index-vip-img' src="../../imgs/icons/phone.png"></image>
+      <text class='postalCode'>{{phonecall}}</text>
+      <view class='index-btn' bindtap="calling">
+        <text class='index-btn-font'>拨打电话</text>
+      </view>
+    </view>
+    <view class="index-like">
+      <image class='index-vip-img' src="../../imgs/icons/wx.png"></image>
+      <text class='postalCode'>{{wechatNumber}}</text>
+      <view class='index-btn' bindtap="addwechat">
+        <text class='index-btn-font'>添加微信</text>
+      </view>
+    </view>
+  </view>
+
+   <view class="content">
+    <view class="resttime">工作时间： 早 9：00 - 晚 5：30</view>
+  </view> 
+
+</view>
+

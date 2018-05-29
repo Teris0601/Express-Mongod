@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.home-container{
+  width:100%;
+}
+.h1{
+  text-align: center;
+  font-size: 90rpx;
+  line-height: 100rpx;
+  padding:0 20rpx;
+}
+.h2{
+  width:100%;
+}
+.h2 image{
+  width:100%;
+}

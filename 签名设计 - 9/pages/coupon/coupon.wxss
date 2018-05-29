@@ -1,0 +1,11 @@
+/* pages/coupon/coupon.wxss */
+
+.showcoupon{
+  width: 750rpx;
+  height: 400rpx
+}
+
+.showcoupon image{
+  width: 100%;
+  height: 100%;
+}

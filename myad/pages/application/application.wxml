@@ -1,0 +1,5 @@
+<view class="app" bindlongtap="getCopyTxt">
+   <view class="app-1">联系我们</view>
+   <view class="app-2">微信号：{{wx}}</view>
+   <text style="font-size:40rpx;color:#bdbdbd;">（点击复制微信号）</text>
+</view>

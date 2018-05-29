@@ -1,0 +1,6 @@
+<view class="home-container">
+  <text class="h1">{{adtxt}}</text>
+  <view class="h2" wx:for="{{imgs}}">
+    <image src="{{item}}" mode="widthFix" bindlongtap="getCopyTxt"></image>
+  </view>
+</view>
